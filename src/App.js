@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
+import Navbar from "../src/Components/Navbar";
+import Home from "../src/Components/Home";
+import Menu from "../src/Components/Menu";
+import Contact from "../src/Components/Contact";
+import NotFound from "../src/Components/NotFound";
+import entrantes from "./Data/Entrantes.js";
+import dessert from "./Data/Dessert";
+import mainCourse from "./Data/MainCourse";
+import platoEspecial from "./Data/PlatoEspecial";
+import platoPrincipal from "./Data/PlatoPrincipal";
+import postre from "./Data/Postre";
+import specialDishes from "./Data/SpecialDishes";
+import starters from "./Data/Starters";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element = {<Home/>} />
+          <Route path='/menu' element = {<Menu entrantes={entrantes} platoPrincipal={platoPrincipal} platoEspecial={platoEspecial} postre={postre} />} />
+          <Route path='/contact' element = {<Contact/>} />
+          <Route path='*' element = {<NotFound/>} />
+        </Routes>
+      </Router>
     </div>
   );
 }

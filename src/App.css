@@ -1,38 +1,325 @@
-.App {
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+
+.navbar{
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #483234;
+  position: fixed;
+  margin-bottom: 10rem;
+}
+
+.navbar-logo img{
+  width: 3rem;
+}
+
+.navbar ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.navbar li{
+  margin: 0 2rem;
+}
+
+.navlinks{
+  font-size: larger;
+  font-weight: bold;
+  font-family:cursive;
+  color: orange;
+}
+
+/* --------------------HOME-------------------------------- */
+
+.App{
+  /* height: 100vh; */
+  background-color: #483234;
+}
+.home-container{
+  background-image: url(https://thumbs.dreamstime.com/b/healthy-plant-based-fast-food-corner-border-top-view-dark-wood-banner-background-table-scene-cauliflower-crust-pizza-212598651.jpg);
+  background-size: contain;
+  background-position: center left;
+  background-repeat: no-repeat;
+  height: 110vh;
+  background-color:rgb(216, 205, 205);
+}
+
+.name{
+  height: 105vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.name h1{
+  color: orange;
+  font-size: 5rem;
+  font-family:cursive;
+  right: 2rem;
+}
+
+.name p{
+  color: orange;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.aboutus{
+  background-color: rgb(181, 168, 168);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.aboutus h2{
+  font-size: 2.5rem;
+  font-weight:bolder;
+  font-family:cursive;
+  color:#3e292a;
+}
+
+.aboutus p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: x-large;
+  font-weight: bold;
+  color: #483234;
+  margin-top: 1rem;
+}
+
+.galeria{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #483234;
+  
+}
+
+.some-pics{
+  display: flex;
+  background-color: black;
+}
+
+.some-pics img{
+  width: 30rem;
+}
+
+.footer{
+  background-color: rgb(216, 205, 205) ;
+  color:#483234;
+  padding: 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ---------------------------------MENU------------------------------ */
+
+.main-menu{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items:center;
   color: white;
+  background-color: #483234;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* -------ENTRANTES--------------- */
+
+.todoentrantes{
+  margin-top: 5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.todoentrantes button{
+  background-color:#483234;
+  color:orange;
+  border: 2px solid orange;
+  border-radius: 20%;
+  font-family: cursive;
+  padding: 0.5rem;
+}
+
+.todoentrantes h1{
+  padding: 0.5rem;
+}
+
+.nom-pre{
+  display: flex;
+  justify-content: space-between;
+}
+
+.entrantes ul{
+  padding: 2rem;
+}
+
+.descrip{
+  width: 60%;
+}
+
+ul{
+  list-style: none;
+}
+
+/* --------Plato Principal-------- */
+
+.platoPrincipal {
+  margin-top: 2rem; 
+}
+
+.platoPrincipal button{
+  background-color:#483234;
+  color:orange;
+  border: 2px solid orange;
+  border-radius: 20%;
+  font-family: cursive;
+  padding: 0.5rem;
+}
+
+
+.platoPrincipal h1{
+  padding: 0.5rem;
+}
+
+.platop ul{
+  padding: 2rem;
+}
+
+/* -------Plato Especial------ */
+.platoEspecial{
+  margin-top: 2rem;
+}
+
+.platoEspecial button{
+  background-color:#483234;
+  color:orange;
+  border: 2px solid orange;
+  border-radius: 20%;
+  font-family: cursive;
+  padding: 0.5rem;
+}
+.platoEspecial h1{
+  padding: 0.5rem;
+}
+
+.platoEs ul{
+  padding: 2rem;
+}
+
+/* -------Postre----- */
+.postre{
+  margin-top: 2rem;
+}
+
+.postre button{
+  background-color:#483234;
+  color:orange;
+  border: 2px solid orange;
+  border-radius: 20%;
+  font-family: cursive;
+  padding: 0.5rem;
+}
+
+.postre h1{
+  padding: 0.5rem;
+}
+
+.postr ul{
+  padding: 2rem;
+}
+
+/* ---------------Contacto--------------------- */
+
+.contacto{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ background-color:#483234 ;
+}
+
+.contact h1{
+  padding: 2rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3rem;
+  text-decoration: underline;
+  color: orange;
+}
+
+.info{
+  border-radius: 10%;
+  padding: 3rem;
+  background-color:  rgb(216, 205, 205);
+  color:#483234;
+  font-size: 2rem;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+
+/* ----------------------Media Query---------------------- */
+@media screen and (max-width: 768px) {
+  /* Styles for screens with a maximum width of 768px */
+  
+  .navbar{
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
   }
-  to {
-    transform: rotate(360deg);
+
+
+  .navbar li{
+    margin: 0 2rem;
   }
+
+
+  .name h1 {
+    font-size: 3rem;
+  }
+
+  .name p {
+    font-size: 1.5rem;
+  }
+
+  .aboutus h2 {
+    font-size: 2rem;
+  }
+
+  .aboutus p {
+    font-size: 1rem;
+  }
+
+  .some-pics img {
+    width: 20rem;
+  }
+
+  .footer {
+    padding: 1rem;
+  }
+
+  /* Add more styles as needed for smaller screens */
 }
