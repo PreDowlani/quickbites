@@ -301,6 +301,49 @@ ul{
 }
 
 /* ----------------------Media Query---------------------- */
+
+@media screen and (max-width: 320px) {
+  /* Estilos aplicados en dispositivos con un ancho máximo de 320px
+   */
+
+
+   .navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+
+   .navbar li{
+    margin: 0rem;
+    padding: 0rem;
+   }
+  
+   .navlinks{
+    font-size: small;
+   }
+
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 472px) {
+  .navbar {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .navbar ul{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .navbar li{
+    font-size:small;
+  }
+  
+}
+
 @media screen and (max-width: 768px) {
   /* Styles for screens with a maximum width of 768px */
   
