@@ -13,6 +13,7 @@ import platoPrincipal from "./Data/PlatoPrincipal";
 import postre from "./Data/Postre";
 import specialDishes from "./Data/SpecialDishes";
 import starters from "./Data/Starters";
+import pizzas from './Data/Pizzas';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path='/' element = {<Home/>} />
-          <Route path='/menu' element = {<Menu entrantes={entrantes} platoPrincipal={platoPrincipal} platoEspecial={platoEspecial} postre={postre} />} />
+          <Route path='/menu' element = {<Menu entrantes={entrantes} platoPrincipal={platoPrincipal} platoEspecial={platoEspecial} postre={postre} pizzas={pizzas} />} />
           <Route path='/contact' element = {<Contact/>} />
           <Route path='*' element = {<NotFound/>} />
         </Routes>

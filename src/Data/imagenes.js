@@ -6,6 +6,8 @@ import nachod from "../images/nachod.jpg";
 import humburgerbbq from "../images/humburgerbbq.avif";
 import pad from "../images/pad.jpg";
 import rollito from "../images/rollito.jpg";
+import pizza from "../images/pizza.jpg";
+import pizza2 from "../images/pizza2.jpg";
 
 const imagenes = [
     {
@@ -40,6 +42,15 @@ const imagenes = [
         id:8,
         src:rollito
     },
+    {
+        id:9,
+        src:pizza
+    },
+    {
+        id:10,
+        src:pizza2
+    },
+
 
 ]
 

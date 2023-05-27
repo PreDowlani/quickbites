@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 
-const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre }) => {
+const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre, pizzas }) => {
   const todoEntrantes = entrantes;
   const todoPlatoPrincipal = platoPrincipal;
   const todoPlatoEspecial = platoEspecial;
   const todoPostre = postre;
+  const todoPizzas = pizzas;
 
   const [mostrarEntrantes, setEntrantes] = useState(false);
   const [mostrarPlatoPrincipal, setPlatoPrincipal] = useState(false);
   const [mostrarPlatoEspecial, setPlatoEspecial] = useState(false);
   const [mostrarPostre, setPostre] = useState(false);
+  const [mostrarPizzas, setPizzas] = useState(false);
 
   const abrirEntrantes = () => {
     setEntrantes(!mostrarEntrantes);
@@ -27,6 +29,10 @@ const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre }) => {
     setPostre(!mostrarPostre);
   };
 
+  const abrirPizzas = () => {
+    setPizzas(!mostrarPizzas);
+  };
+
   return (
     <div className="main-menu">
       <div className="todoentrantes">
@@ -38,6 +44,7 @@ const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre }) => {
             {todoEntrantes.map((entra) => {
               return (
                 <div>
+                  <br />
                   <hr />
                   <ul>
                     <h2 className="nom-pre">
@@ -60,6 +67,7 @@ const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre }) => {
             {todoPlatoPrincipal.map((platop) => {
               return (
                 <div>
+                  <br />
                   <hr />
                   <ul>
                     <h2 className="nom-pre">
@@ -83,6 +91,7 @@ const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre }) => {
             {todoPlatoEspecial.map((especial) => {
               return (
                 <div>
+                  <br />
                   <hr />
                   <ul>
                     <h2 className="nom-pre">
@@ -90,6 +99,29 @@ const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre }) => {
                       <li>{especial.precio}€</li>
                     </h2>
                     <p className="descrip">{especial.descripcion}</p>
+                  </ul>
+                </div>
+              );
+            })}
+          </div>
+        ) : null}
+      </div>
+      <div className="pizzas">
+        <button onClick={abrirPizzas}>
+          <h1>Nuestras Pizzas</h1>
+        </button>
+        {mostrarPizzas ? (
+          <div className="pizza">
+            {todoPizzas.map((pizza) => {
+              return (
+                <div>
+                  <br />
+                  <hr />
+                  <ul>
+                    <h2 className="nom-pre">
+                      {pizza.nombre} <li>{pizza.precio}€</li>
+                    </h2>
+                    <p className="decrip">{pizza.descripcion}</p>
                   </ul>
                 </div>
               );
@@ -106,6 +138,7 @@ const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre }) => {
             {todoPostre.map((postre) => {
               return (
                 <div>
+                  <br />
                   <hr />
                   <ul>
                     <h2 className="nom-pre">
