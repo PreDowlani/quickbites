@@ -5,33 +5,29 @@
 }
 
 
-.navbar{
+/* .navbar{
   width: 100%;
   padding: 0.5rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-color: #483234;
   position: fixed;
   margin-bottom: 10rem;
-}
+} */
 
-.navbar-logo img{
-  width: 3rem;
-}
 
 .navbar ul{
-  list-style: none;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.navbar li{
-  margin: 0 2rem;
+.navbar ul img{
+  width: 5rem;
+  margin: 1rem;
 }
 
 .navlinks{
@@ -40,6 +36,7 @@
   font-family:cursive;
   color: orange;
 }
+
 
 /* --------------------HOME-------------------------------- */
 
@@ -108,7 +105,6 @@
   flex-direction: column;
   padding: 2rem;
   background-color: #483234;
-  
 }
 
 .some-pics{
@@ -302,88 +298,11 @@ ul{
 
 /* ----------------------Media Query---------------------- */
 
-@media screen and (max-width: 320px) {
-  /* Estilos aplicados en dispositivos con un ancho máximo de 320px
-   */
+@media (max-width:768px) {
 
-
-   .navbar ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   }
-
-
-   .navbar li{
-    margin: 0rem;
-    padding: 0rem;
-   }
-  
-   .navlinks{
-    font-size: small;
-   }
+.info{
+  font-size: medium;
+}
 
 }
 
-/* Media query para dispositivos móviles */
-@media screen and (max-width: 472px) {
-  .navbar {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .navbar ul{
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  .navbar li{
-    font-size:small;
-  }
-  
-}
-
-@media screen and (max-width: 768px) {
-  /* Styles for screens with a maximum width of 768px */
-  
-  .navbar{
-    width: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-  }
-
-
-  .navbar li{
-    margin: 0 2rem;
-  }
-
-
-  .name h1 {
-    font-size: 3rem;
-  }
-
-  .name p {
-    font-size: 1.5rem;
-  }
-
-  .aboutus h2 {
-    font-size: 2rem;
-  }
-
-  .aboutus p {
-    font-size: 1rem;
-  }
-
-  .some-pics img {
-    width: 20rem;
-  }
-
-  .footer {
-    padding: 1rem;
-  }
-
-  /* Add more styles as needed for smaller screens */
-}

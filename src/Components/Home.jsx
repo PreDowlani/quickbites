@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -12,7 +12,21 @@ const Home = () => {
     infinite: true, // Habilitar el desplazamiento infinito
     speed: 500, // Velocidad de transición en milisegundos
     slidesToShow: 3, // Número de imágenes a mostrar por pantalla
-    slidesToScroll: 1, // Número de imágenes a desplazar por cada clic
+    slidesToScroll: 1, // Número de imágenes a desplazar por cada click
+  };
+
+  const [editSlides, setSlides] = useState(true);
+
+  const Slides = () => {
+    setSlides(false);
+  };
+
+  const settings2 = {
+    dots: true, // Mostrar puntos de navegación
+    infinite: true, // Habilitar el desplazamiento infinito
+    speed: 500, // Velocidad de transición en milisegundos
+    slidesToShow: 1, // Número de imágenes a mostrar por pantalla
+    slidesToScroll: 1, // Número de imágenes a desplazar por cada click
   };
 
   return (
@@ -44,15 +58,17 @@ const Home = () => {
           with local suppliers and offer vegetarian and vegan choices.
         </p>
       </div>
-      <div className="galeria">
-        <Slider {...settings}>
-          {images.map((image) => (
-            <div key={image.id} className="some-pics">
-              <img src={image.src} alt="todo" height="300px" />
-            </div>
-          ))}
-        </Slider>
-      </div>
+      {editSlides ? (
+        <div className="galeria">
+          <Slider {...settings}>
+            {images.map((image) => (
+              <div key={image.id} className="some-pics">
+                <img src={image.src} alt="todo" height="300px" />
+              </div>
+            ))}
+          </Slider>
+        </div>
+      ) : null}
       <div className="footer">
         <h2>© Quick Bites </h2>
         <p>
