@@ -48,17 +48,19 @@
   /* height: 100vh; */
   background-color: #483234;
 }
-.home-container{
+/* .home-container{
   background-image: url(https://thumbs.dreamstime.com/b/healthy-plant-based-fast-food-corner-border-top-view-dark-wood-banner-background-table-scene-cauliflower-crust-pizza-212598651.jpg);
   background-size: contain;
   background-position: center left;
   background-repeat: no-repeat;
-  height: 110vh;
+  height: 105vh;
   background-color:rgb(216, 205, 205);
-}
+} */
 
 .name{
-  height: 105vh;
+  background-image: url(https://thumbs.dreamstime.com/b/healthy-plant-based-fast-food-corner-border-top-view-dark-wood-banner-background-table-scene-cauliflower-crust-pizza-212598651.jpg);
+  background-size: cover;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -68,15 +70,17 @@
 
 .name h1{
   color: orange;
-  font-size: 5rem;
+  font-size: 7rem;
   font-family:cursive;
   right: 2rem;
+  font-weight: bold;
 }
 
 .name p{
   color: orange;
   font-size: 2rem;
   font-style: italic;
+  font-weight: bold;
 }
 
 .aboutus{
@@ -87,6 +91,7 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  margin: 2rem 1rem;
 }
 
 .aboutus h2{

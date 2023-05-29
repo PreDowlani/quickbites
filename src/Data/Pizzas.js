@@ -51,11 +51,5 @@ const pizzas = [
   }
 ];
 
-// Acceder a los datos de una pizza específica
-const pizza1 = pizzas[0];
-console.log(pizza1.id); // 1
-console.log(pizza1.imagen); // "pizza1.jpg"
-console.log(pizza1.nombre); // "Pizza Margarita"
-console.log(pizza1.descripcion); // "Deliciosa pizza clásica con salsa de tomate, mozzarella y albahaca fresca."
 
 export default pizzas;
