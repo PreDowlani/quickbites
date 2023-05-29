@@ -37,6 +37,10 @@
   color: orange;
 }
 
+.navlinks:hover{
+  color: white;
+}
+
 
 /* --------------------HOME-------------------------------- */
 
@@ -107,13 +111,14 @@
   background-color: #483234;
 }
 
+
 .some-pics{
   display: flex;
   background-color: black;
 }
 
 .some-pics img{
-  width: 30rem;
+  width: 100%;
 }
 
 .footer{
@@ -158,6 +163,10 @@
   padding: 0.5rem;
 }
 
+.todoentrantes h1:hover{
+  color: white;
+}
+
 .nom-pre{
   display: flex;
   justify-content: space-between;
@@ -195,6 +204,10 @@ ul{
   padding: 0.5rem;
 }
 
+.platoPrincipal h1:hover{
+  color: white;
+}
+
 .platop ul{
   padding: 2rem;
 }
@@ -214,6 +227,10 @@ ul{
 }
 .platoEspecial h1{
   padding: 0.5rem;
+}
+
+.platoEspecial h1:hover{
+  color: white;
 }
 
 .platoEs ul{
@@ -238,6 +255,10 @@ ul{
   padding: 0.5rem;
 }
 
+.postre h1:hover{
+  color: white;
+}
+
 .postr ul{
   padding: 2rem;
 }
@@ -258,6 +279,10 @@ ul{
 
 .pizzas h1{
   padding: 0.5rem;
+}
+
+.pizzas h1:hover{
+  color: white;
 }
 
 .pizza ul{
@@ -298,11 +323,54 @@ ul{
 
 /* ----------------------Media Query---------------------- */
 
-@media (max-width:768px) {
+@media (min-width:320px) and (max-width:465px) {
+ 
+  /* ----Home--- */
+  .name{
+    background-image: url(https://thumbs.dreamstime.com/b/healthy-plant-based-fast-food-corner-border-top-view-dark-wood-banner-background-table-scene-cauliflower-crust-pizza-212598651.jpg);
+    background-position: right;
+  }
 
-.info{
-  font-size: medium;
+  .name h1{
+    font-size: 4rem;
+  }
+
+  .aboutus{
+    font-size: 1.5rem;
+  }
+
+
+/* ----Menu---- */
+.nom-pre{
+  font-style: italic;
+  font-size: 2rem;
 }
 
+/* ----Contact--- */
+  .info{
+    padding: 0.3rem;
+    font-size: 1rem;
+    border-radius: 0%;
+  }
+}
+
+@media (max-width:320px){
+  /* ----Home--- */
+  .name{
+    background-image: url(https://thumbs.dreamstime.com/b/healthy-plant-based-fast-food-corner-border-top-view-dark-wood-banner-background-table-scene-cauliflower-crust-pizza-212598651.jpg);
+    background-position: right;
+  }
+
+  /* ----Contact--- */
+
+  .contact h1{
+    font-size: 2rem;
+  }
+
+  .info{
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0%;
+  }
 }
 

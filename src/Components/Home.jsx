@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -6,28 +6,62 @@ import images from "../Data/imagenes";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-  // Configurar las opciones del carrusel
-  const settings = {
-    dots: true, // Mostrar puntos de navegación
-    infinite: true, // Habilitar el desplazamiento infinito
-    speed: 500, // Velocidad de transición en milisegundos
-    slidesToShow: 3, // Número de imágenes a mostrar por pantalla
-    slidesToScroll: 1, // Número de imágenes a desplazar por cada click
-  };
+  // // Configurar las opciones del carrusel
+  // const settings = {
+  //   dots: true, // Mostrar puntos de navegación
+  //   infinite: true, // Habilitar el desplazamiento infinito
+  //   speed: 500, // Velocidad de transición en milisegundos
+  //   slidesToShow: 3, // Número de imágenes a mostrar por pantalla
+  //   slidesToScroll: 1, // Número de imágenes a desplazar por cada click
+  // };
 
-  const [editSlides, setSlides] = useState(true);
+  const [sliderSettings, setSliderSettings] = useState({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  });
 
-  const Slides = () => {
-    setSlides(false);
-  };
+  useEffect(() => {
+    const handleResize = () => {
+      const windowWidth = window.innerWidth;
 
-  const settings2 = {
-    dots: true, // Mostrar puntos de navegación
-    infinite: true, // Habilitar el desplazamiento infinito
-    speed: 500, // Velocidad de transición en milisegundos
-    slidesToShow: 1, // Número de imágenes a mostrar por pantalla
-    slidesToScroll: 1, // Número de imágenes a desplazar por cada click
-  };
+      if (windowWidth <= 462) {
+        setSliderSettings({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        });
+      } else if (windowWidth >= 463 && windowWidth <= 850) {
+        setSliderSettings({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        });
+      } else {
+        setSliderSettings({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        });
+      }
+    };
+
+    handleResize();
+
+    const resizeListener = window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", resizeListener);
+    };
+  }, []);
 
   return (
     <div className="home-container">
@@ -58,17 +92,15 @@ const Home = () => {
           with local suppliers and offer vegetarian and vegan choices.
         </p>
       </div>
-      {editSlides ? (
-        <div className="galeria">
-          <Slider {...settings}>
-            {images.map((image) => (
-              <div key={image.id} className="some-pics">
-                <img src={image.src} alt="todo" height="300px" />
-              </div>
-            ))}
-          </Slider>
-        </div>
-      ) : null}
+      <div className="galeria">
+        <Slider className="slider" {...sliderSettings}>
+          {images.map((image) => (
+            <div key={image.id} className="some-pics">
+              <img src={image.src} alt="todo" height="300px" />
+            </div>
+          ))}
+        </Slider>
+      </div>
       <div className="footer">
         <h2>© Quick Bites </h2>
         <p>

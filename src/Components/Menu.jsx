@@ -47,7 +47,7 @@ const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre, pizzas }) => {
                   <br />
                   <hr />
                   <ul>
-                    <h2 className="nom-pre">
+                    <h2 className="nom-pre" key={entra.id}>
                       {entra.nombre} <li className="precio">{entra.precio}€</li>
                     </h2>
                     <p className="descrip">{entra.descripcion}</p>
@@ -70,7 +70,7 @@ const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre, pizzas }) => {
                   <br />
                   <hr />
                   <ul>
-                    <h2 className="nom-pre">
+                    <h2 className="nom-pre" key={platop.id}>
                       {platop.nombre}
                       <li>{platop.precio}€</li>
                     </h2>
@@ -94,7 +94,7 @@ const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre, pizzas }) => {
                   <br />
                   <hr />
                   <ul>
-                    <h2 className="nom-pre">
+                    <h2 className="nom-pre" key={especial.id}>
                       {especial.nombre}
                       <li>{especial.precio}€</li>
                     </h2>
@@ -118,7 +118,7 @@ const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre, pizzas }) => {
                   <br />
                   <hr />
                   <ul>
-                    <h2 className="nom-pre">
+                    <h2 className="nom-pre" key={pizza.id}>
                       {pizza.nombre} <li>{pizza.precio}€</li>
                     </h2>
                     <p className="decrip">{pizza.descripcion}</p>
@@ -141,7 +141,7 @@ const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre, pizzas }) => {
                   <br />
                   <hr />
                   <ul>
-                    <h2 className="nom-pre">
+                    <h2 className="nom-pre" key={postre.id}>
                       {postre.nombre}
                       <li>{postre.precio}€</li>
                     </h2>
