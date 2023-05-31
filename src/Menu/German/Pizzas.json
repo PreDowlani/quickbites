@@ -1,0 +1,54 @@
+{
+    "pizzas" : [
+        {
+          "id": 1,
+          "image": "pizza1.jpg",
+          "name": "Margherita-Pizza",
+          "description": "Köstliche klassische Pizza mit Tomatensauce, Mozzarella und frischem Basilikum.",
+          "price": 7.99
+        },
+        {
+          "id": 2,
+          "image": "pizza2.jpg",
+          "name": "Pepperoni-Pizza",
+          "description": "Leckere Pizza mit Tomatensauce, Mozzarella und Pepperoni-Scheiben.",
+          "price": 9.99
+        },
+        {
+          "id": 3,
+          "image": "pizza3.jpg",
+          "name": "Hawaiianische Pizza",
+          "description": "Kontroverse, aber köstliche Pizza mit Tomatensauce, Mozzarella, Schinken und Ananas.",
+          "price": 12.99
+        },
+        {
+          "id": 4,
+          "image": "pizza4.jpg",
+          "name": "Vegetarische Pizza",
+          "description": "Geschmackvolle vegetarische Pizza mit Tomatensauce, Mozzarella, Pilzen, Paprika und Oliven.",
+          "price": 9.99
+        },
+        {
+          "id": 5,
+          "image": "pizza5.jpg",
+          "name": "Barbecue-Pizza",
+          "description": "Unwiderstehliche Pizza mit Barbecue-Sauce, Mozzarella, Rindfleischstreifen und karamellisierten Zwiebeln.",
+          "price": 10.99
+        },
+        {
+          "id": 6,
+          "image": "pizza6.jpg",
+          "name": "Vier-Käse-Pizza",
+          "description": "Exquisite Pizza mit Tomatensauce, Mozzarella, Blauschimmelkäse, Ziegenkäse und Parmesan.",
+          "price": 12.99
+        },
+        {
+          "id": 7,
+          "image": "pizza7.jpg",
+          "name": "Meeresfrüchte-Pizza",
+          "description": "Leckere Meeresfrüchte-Pizza mit Tomatensauce, Mozzarella, Garnelen, Miesmuscheln und Venusmuscheln.",
+          "price": 15.99
+        }
+      ]
+      
+}

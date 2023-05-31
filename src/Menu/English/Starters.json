@@ -1,0 +1,54 @@
+{
+  "starters" : [
+    {
+      "id": 1,
+      "image": "hello",
+      "name": "Iberian Ham Croquettes",
+      "description": "Creamy and crispy homemade croquettes filled with high-quality Iberian ham.",
+      "price": 8.99
+    },
+    {
+      "id": 2,
+      "image": "hello",
+      "name": "Tomato and Buffalo Mozzarella Bruschetta",
+      "description": "Toasted bread topped with fresh diced tomatoes, buffalo mozzarella, basil, and extra virgin olive oil.",
+      "price": 7.50
+    },
+    {
+      "id": 3,
+      "image": "hello",
+      "name": "Buffalo Chicken Wings",
+      "description": "Marinated and fried chicken wings, coated with a spicy Buffalo-style sauce, served with blue cheese dressing and celery sticks.",
+      "price": 9.75
+    },
+    {
+      "id": 4,
+      "image": "hello",
+      "name": "Beef Empanadas",
+      "description": "Baked empanadas filled with seasoned beef and vegetables, served with tomato sauce.",
+      "price": 6.99
+    },
+    {
+      "id": 5,
+      "image": "hello",
+      "name": "Crispy Onion Rings",
+      "description": "Breaded and fried onion rings served with aioli sauce.",
+      "price": 5.50
+    },
+    {
+      "id": 6,
+      "image": "hello",
+      "name": "Summer Rolls",
+      "description": "Delicate Vietnamese rolls filled with fresh vegetables, aromatic herbs, and shrimp, served with peanut sauce.",
+      "price": 10.25
+    },
+    {
+      "id": 7,
+      "image": "hello",
+      "name": "Nachos with Guacamole",
+      "description": "Crispy nachos topped with melted cheese, guacamole, beans, and spicy sauce.",
+      "price": 8.50
+    }
+  ]
+  
+}

@@ -1,0 +1,72 @@
+{
+  "home-container": {
+    "name": {
+      "h1": "Quick Bites",
+      "p": "Unique & Trendy"
+    },
+    "aboutus": {
+      "h2": "Experience the Flavor of Homemade Food",
+      "p1": "At Quick Bites, we are passionate about offering a unique experience of homemade food and a variety of Asian and European street food. Our main goal is to delight your palate with authentic flavors and dishes prepared with fresh and high-quality ingredients. From juicy burgers to delicious noodle bowls and gourmet sandwiches, our menu has something for everyone. We take pride in collaborating with local suppliers and offering vegetarian and vegan options. Come and enjoy a quick yet flavorful culinary experience at Quick Bites. We look forward to welcoming you with open arms!",
+      "p2": "We take pride in offering a unique culinary experience with our homemade food and varieties of street food. Our aim is to provide you with tasty and authentic dishes prepared with fresh and high-quality ingredients. From appetizing burgers to Asian noodle bowls and gourmet sandwiches, we have options to satisfy every taste. We work with local suppliers and offer vegetarian and vegan choices."
+    },
+    "galeria": {
+      "slider": {
+        "images": [
+          {
+            "id": "1",
+            "src": "image_1_path"
+          },
+          {
+            "id": "2",
+            "src": "image_2_path"
+          },
+          {
+            "id": "3",
+            "src": "image_3_path"
+          },
+          {
+            "id": "4",
+            "src": "image_4_path"
+          }
+        ]
+      }
+    },
+    "footer": {
+      "h2": "© Quick Bites",
+      "p": "All rights reserved. | For more information",
+      "p2" : "click here"
+    },
+    
+      "menu": {
+        "home": "Home",
+        "about": "About",
+        "menu": "Menu",
+        "contact": "Contact"
+    },
+    
+      "contact": {
+        "title": "Contact Us:",
+        "info": {
+          "title": "Quick Bites",
+          "address": "Address: 123 Main Street, City, State 12345",
+          "phone": "Phone: (555) 123-4567",
+          "email": "Email: info@deliciousbites.com",
+          "timings": {
+            "openingHours": "Opening Hours:",
+            "weekday": "Monday to Friday: 11:00 am - 10:00 pm",
+            "weekend": "Saturday and Sunday: 12:00 pm - 11:00 pm"
+          }
+        }
+      
+    },
+    "main-menu": {
+      "entrantes": "Appetizers",
+      "platoPrincipal": "Main Course",
+      "platoEspecial": "House Specials",
+      "pizzas": "Our Pizzas",
+      "postre": "Desserts"
+    }
+    
+    
+  }
+}

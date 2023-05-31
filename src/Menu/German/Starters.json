@@ -1,0 +1,54 @@
+{
+    "starters" : [
+        {
+          "id": 1,
+          "image": "hallo",
+          "name": "Iberische Schinkenkroketten",
+          "description": "Cremige und knusprige hausgemachte Kroketten gefüllt mit hochwertigem iberischen Schinken.",
+          "preis": 8.99
+        },
+        {
+          "id": 2,
+          "image": "hallo",
+          "name": "Tomaten-Mozzarella-Bruschetta",
+          "description": "Geröstetes Brot mit frischen gewürfelten Tomaten, Büffelmozzarella, Basilikum und extra nativem Olivenöl.",
+          "preis": 7.50
+        },
+        {
+          "id": 3,
+          "image": "hallo",
+          "name": "Buffalo Chicken Wings",
+          "description": "Marinierte und frittierte Hühnerflügel in einer würzigen Buffalo-Sauce, serviert mit Blauschimmelkäse-Dressing und Selleriestangen.",
+          "preis": 9.75
+        },
+        {
+          "id": 4,
+          "image": "hallo",
+          "name": "Rindfleisch-Empanadas",
+          "description": "Gebackene Empanadas gefüllt mit gewürztem Rindfleisch und Gemüse, serviert mit Tomatensauce.",
+          "preis": 6.99
+        },
+        {
+          "id": 5,
+          "image": "hallo",
+          "name": "Knusprige Zwiebelringe",
+          "description": "Panierter und frittierter Zwiebelringe serviert mit Aioli-Sauce.",
+          "preis": 5.50
+        },
+        {
+          "id": 6,
+          "image": "hallo",
+          "name": "Sommerrollen",
+          "description": "Zarte vietnamesische Rollen gefüllt mit frischem Gemüse, aromatischen Kräutern und Garnelen, serviert mit Erdnusssauce.",
+          "preis": 10.25
+        },
+        {
+          "id": 7,
+          "image": "hallo",
+          "name": "Nachos mit Guacamole",
+          "description": "Knusprige Nachos mit geschmolzenem Käse, Guacamole, Bohnen und scharfer Sauce.",
+          "preis": 8.50
+        }
+      ]
+      
+}

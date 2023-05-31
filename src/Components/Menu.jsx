@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre, pizzas }) => {
+  const { t } = useTranslation();
+
   const todoEntrantes = entrantes;
   const todoPlatoPrincipal = platoPrincipal;
   const todoPlatoEspecial = platoEspecial;
@@ -37,7 +40,7 @@ const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre, pizzas }) => {
     <div className="main-menu">
       <div className="todoentrantes">
         <button onClick={abrirEntrantes}>
-          <h1>Entrantes</h1>
+          <h1>{t("home-container.main-menu.entrantes")}</h1>
         </button>
         {mostrarEntrantes ? (
           <div className="entrantes">
@@ -60,7 +63,7 @@ const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre, pizzas }) => {
       </div>
       <div className="platoPrincipal">
         <button onClick={abrirPlatoPrincipal}>
-          <h1>Plato Principal</h1>
+          <h1>{t("home-container.main-menu.platoPrincipal")}</h1>
         </button>
         {mostrarPlatoPrincipal ? (
           <div className="platop">
@@ -84,7 +87,7 @@ const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre, pizzas }) => {
       </div>
       <div className="platoEspecial">
         <button onClick={abrirPlatoEspecial}>
-          <h1>Platos Especial de la Casa</h1>
+          <h1>{t("home-container.main-menu.platoEspecial")}</h1>
         </button>
         {mostrarPlatoEspecial ? (
           <div className="platoEs">
@@ -108,7 +111,7 @@ const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre, pizzas }) => {
       </div>
       <div className="pizzas">
         <button onClick={abrirPizzas}>
-          <h1>Nuestras Pizzas</h1>
+          <h1>{t("home-container.main-menu.pizzas")}</h1>
         </button>
         {mostrarPizzas ? (
           <div className="pizza">
@@ -131,7 +134,7 @@ const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre, pizzas }) => {
       </div>
       <div className="postre">
         <button onClick={abrirPostre}>
-          <h1>Postres</h1>
+          <h1>{t("home-container.main-menu.postre")}</h1>
         </button>
         {mostrarPostre ? (
           <div className="postr">

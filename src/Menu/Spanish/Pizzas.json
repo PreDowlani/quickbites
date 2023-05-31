@@ -1,0 +1,54 @@
+{
+  "pizzas" : [
+    {
+      "id": 1,
+      "image": "pizza1.jpg",
+      "name": "Pizza Margarita",
+      "description": "Deliciosa pizza clásica con salsa de tomate, mozzarella y albahaca fresca.",
+      "price": 7.99
+    },
+    {
+      "id": 2,
+      "image": "pizza2.jpg",
+      "name": "Pizza Pepperoni",
+      "description": "Sabrosa pizza con salsa de tomate, mozzarella y rodajas de pepperoni.",
+      "price": 9.99
+    },
+    {
+      "id": 3,
+      "image": "pizza3.jpg",
+      "name": "Pizza Hawaiana",
+      "description": "Pizza controvertida pero deliciosa con salsa de tomate, mozzarella, jamón y piña.",
+      "price": 12.99
+    },
+    {
+      "id": 4,
+      "image": "pizza4.jpg",
+      "name": "Pizza Vegetariana",
+      "description": "Sabrosa pizza vegetariana con salsa de tomate, mozzarella, champiñones, pimientos y aceitunas.",
+      "price": 9.99
+    },
+    {
+      "id": 5,
+      "image": "pizza5.jpg",
+      "name": "Pizza Barbacoa",
+      "description": "Irresistible pizza con salsa barbacoa, mozzarella, carne de res desmenuzada y cebolla caramelizada.",
+      "price": 10.99
+    },
+    {
+      "id": 6,
+      "image": "pizza6.jpg",
+      "name": "Pizza Cuatro Quesos",
+      "description": "Exquisita pizza con salsa de tomate, mozzarella, queso azul, queso de cabra y queso parmesano.",
+      "price": 12.99
+    },
+    {
+      "id": 7,
+      "image": "pizza7.jpg",
+      "name": "Pizza de Mariscos",
+      "description": "Deliciosa pizza de mariscos con salsa de tomate, mozzarella, camarones, mejillones y almejas.",
+      "price": 15.99
+    }
+  ]
+  
+}

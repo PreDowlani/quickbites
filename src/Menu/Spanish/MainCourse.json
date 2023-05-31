@@ -1,0 +1,50 @@
+{
+  "maincourse" : [
+    {
+      "id": 1,
+      "name": "Hamburguesa Clásica con Queso",
+      "description": "Hamburguesa de carne con queso cheddar, lechuga, tomate, cebolla y salsa especial, servida con papas fritas.",
+      "image": "cheeseburger.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Pad Thai de Verduras",
+      "description": "Fideos de arroz salteados con verduras frescas, huevo, cacahuetes y salsa de tamarindo.",
+      "image": "pad-thai.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Pescado con Patatas Fritas",
+      "description": "Filete de pescado rebozado y frito, servido con patatas fritas y salsa tártara.",
+      "image": "fish-chips.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Espaguetis a la Carbonara",
+      "description": "Pasta italiana con tocino, huevo, queso parmesano y pimienta negra.",
+      "image": "carbonara.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Hamburguesa Vegana",
+      "description": "Una jugosa hamburguesa vegetal sazonada con especias, servida en un pan con lechuga, tomate, cebolla y una variedad de salsas veganas.",
+      "image": "vegan-burger.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Wrap de Falafel",
+      "description": "Deliciosos falafels caseros envueltos en una tortilla de trigo, acompañados de hummus, lechuga, tomate y salsa de yogur vegana.",
+      "image": "falafel-wrap.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Hamburguesa BBQ",
+      "description": "Hamburguesa de carne con salsa BBQ casera, queso cheddar, tocino crujiente y cebolla caramelizada, servida con papas fritas.",
+      "image": "bbq-burger.jpg"
+    }
+  ]
+  
+}
+
+
+  

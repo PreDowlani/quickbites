@@ -1,0 +1,74 @@
+{
+  "home-container": {
+    "name": {
+      "h1": "Quick Bites",
+      "p": "Unique & Trendy"
+    },
+    "aboutus": {
+      "h2": "Experimenta el Sabor de la Comida Casera",
+      "p1": "En Quick Bites, nos apasiona ofrecer una experiencia única de comida casera y una variedad de comida callejera asiática y europea. Nuestro objetivo principal es deleitar tu paladar con sabores auténticos y platos preparados con ingredientes frescos y de alta calidad. Desde jugosas hamburguesas hasta deliciosos cuencos de fideos y sándwiches gourmet, nuestro menú tiene algo para todos. Nos enorgullece colaborar con proveedores locales y ofrecer opciones vegetarianas y veganas. Ven y disfruta de una experiencia culinaria rápida pero llena de sabor en Quick Bites. ¡Esperamos darte la bienvenida con los brazos abiertos!",
+      "p2": "Nos enorgullece ofrecer una experiencia culinaria única con nuestra comida casera y variedades de comida callejera. Nuestro objetivo es brindarte platos sabrosos y auténticos preparados con ingredientes frescos y de alta calidad. Desde apetitosas hamburguesas hasta cuencos de fideos asiáticos y sándwiches gourmet, tenemos opciones para satisfacer todos los gustos. Trabajamos con proveedores locales y ofrecemos opciones vegetarianas y veganas."
+    },
+    "galeria": {
+      "slider": {
+        "images": [
+          {
+            "id": "1",
+            "src": "ruta_de_la_imagen_1"
+          },
+          {
+            "id": "2",
+            "src": "ruta_de_la_imagen_2"
+          },
+          {
+            "id": "3",
+            "src": "ruta_de_la_imagen_3"
+          },
+          {
+            "id": "4",
+            "src": "ruta_de_la_imagen_4"
+          }
+        ]
+      }
+    },
+    "footer": {
+      "h2": "© Quick Bites",
+      "p": "Todos los derechos reservados. | Para obtener más información",
+      "p2" : "Haz clic aquí"
+    },
+    
+      "menu": {
+        "home": "Inicio",
+        "about": "Acerca de",
+        "menu": "Menú",
+        "contact": "Contacto"
+      },
+      
+        "contact": {
+          "title": "Contáctanos:",
+          "info": {
+            "title": "Quick Bites",
+            "address": "Dirección: Calle Principal 123, Ciudad, Estado 12345",
+            "phone": "Teléfono: (555) 123-4567",
+            "email": "Email: info@deliciousbites.com",
+            "timings": {
+              "openingHours": "Horarios de apertura:",
+              "weekday": "Lunes a Viernes: 11:00 am - 10:00 pm",
+              "weekend": "Sábado y Domingo: 12:00 pm - 11:00 pm"
+            }
+          }
+        
+      },
+      "main-menu": {
+        "entrantes": "Entrantes",
+        "platoPrincipal": "Plato Principal",
+        "platoEspecial": "Platos Especial de la Casa",
+        "pizzas": "Nuestras Pizzas",
+        "postre": "Postres"
+      }
+      
+    
+  }
+
+  
+}

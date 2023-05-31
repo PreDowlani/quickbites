@@ -70,7 +70,7 @@ export const Home2 = () => {
           something for everyone. We take pride in collaborating with local
           suppliers and providing vegetarian and vegan options. Come and enjoy a
           quick yet flavorful culinary experience at Quick Bites. We look
-          forward to welcoming you with open arms!"
+          forward to welcoming you with open arms!
         </p>
         <br />
         <p>

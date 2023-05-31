@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -6,14 +7,7 @@ import images from "../Data/imagenes";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-  // // Configurar las opciones del carrusel
-  // const settings = {
-  //   dots: true, // Mostrar puntos de navegación
-  //   infinite: true, // Habilitar el desplazamiento infinito
-  //   speed: 500, // Velocidad de transición en milisegundos
-  //   slidesToShow: 3, // Número de imágenes a mostrar por pantalla
-  //   slidesToScroll: 1, // Número de imágenes a desplazar por cada click
-  // };
+  const { t } = useTranslation();
 
   const [sliderSettings, setSliderSettings] = useState({
     dots: true,
@@ -70,28 +64,10 @@ const Home = () => {
         <p>Unique & Trendy</p>
       </div>
       <div className="aboutus">
-        <h2>Experimenta el Sabor de la Comida Casera</h2>
-        <p>
-          En Quick Bites, nos apasiona ofrecer una experiencia única de comida
-          casera y una variedad de comida callejera asiática y europea. Nuestro
-          objetivo principal es deleitar tu paladar con sabores auténticos y
-          platos preparados con ingredientes frescos y de alta calidad. Desde
-          jugosas hamburguesas hasta deliciosos cuencos de fideos y sándwiches
-          gourmet, nuestro menú tiene algo para todos. Nos enorgullece colaborar
-          con proveedores locales y ofrecer opciones vegetarianas y veganas. Ven
-          y disfruta de una experiencia culinaria rápida pero llena de sabor en
-          Quick Bites. ¡Esperamos darte la bienvenida con los brazos abiertos!
-        </p>
+        <h2>{t("home-container.aboutus.h2")}</h2>
+        <p>{t("home-container.aboutus.p1")}</p>
         <br />
-        <p>
-          Nos enorgullece ofrecer una experiencia culinaria única con nuestra
-          comida casera y variedades de comida callejera. Nuestro objetivo es
-          brindarte platos sabrosos y auténticos preparados con ingredientes
-          frescos y de alta calidad. Desde apetitosas hamburguesas hasta cuencos
-          de fideos asiáticos y sándwiches gourmet, tenemos opciones para
-          satisfacer todos los gustos. Trabajamos con proveedores locales y
-          ofrecemos opciones vegetarianas y veganas.
-        </p>
+        <p>{t("home-container.aboutus.p2")}</p>
       </div>
       <div className="galeria">
         <Slider className="slider" {...sliderSettings}>
@@ -105,8 +81,8 @@ const Home = () => {
       <div className="footer">
         <h2>© Quick Bites</h2>
         <p>
-          Todos los derechos reservados. | Para obtener más información,{" "}
-          <Link to={"/contact"}>Haz clic aquí</Link>
+          {t("home-container.footer.p")}{" "}
+          <Link to={"/contact"}>{t("home-container.footer.p2")}</Link>
         </p>
       </div>
     </div>

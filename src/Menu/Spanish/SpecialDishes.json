@@ -1,0 +1,35 @@
+{
+  "special" : [
+    {
+      "id": 1,
+      "name": "Ravioli de Langosta",
+      "description": "Raviolis rellenos de langosta y ricota, servidos con salsa de mantequilla y limón.",
+      "image": "ravioli-langosta.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Cordero Asado",
+      "description": "Pierna de cordero asada a fuego lento, servida con puré de papas y salsa de menta.",
+      "image": "cordero-asado.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Rollito de Sushi Arcoiris",
+      "description": "Rollito de sushi con una variedad de pescado fresco, aguacate y pepino, decorado con rebanadas de pescado coloridas.",
+      "image": "rollito-sushi-arcoiris.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Kebab de Pollo",
+      "description": "Brochetas de pollo marinado a la parrilla, servidas con arroz pilaf y salsa de tzatziki.",
+      "image": "kebab-pollo.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Hot Dog Gourmet",
+      "description": "Salchicha de alta calidad en un pan artesanal, cubierto con cebolla caramelizada, mostaza Dijon y pepinillos.",
+      "image": "hot-dog-gourmet.jpg"
+    }
+  ]
+  
+}

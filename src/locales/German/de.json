@@ -1,0 +1,72 @@
+{
+    "home-container": {
+      "name": {
+        "h1": "Quick Bites",
+        "p": "Einzigartig & Trendy"
+      },
+      "aboutus": {
+        "h2": "Erlebe den Geschmack von hausgemachtem Essen",
+        "p1": "Bei Quick Bites sind wir leidenschaftlich darum bemüht, einzigartige hausgemachte Speisen und eine Vielfalt an asiatischem und europäischem Street Food anzubieten. Unser Hauptziel ist es, Ihren Gaumen mit authentischen Aromen und Gerichten zu verwöhnen, die aus frischen und hochwertigen Zutaten zubereitet werden. Von saftigen Burgern über köstliche Nudelschalen bis hin zu Gourmet-Sandwiches bietet unsere Speisekarte für jeden etwas. Wir arbeiten stolz mit lokalen Lieferanten zusammen und bieten vegetarische und vegane Optionen an. Kommen Sie vorbei und genießen Sie eine schnelle, aber geschmackvolle kulinarische Erfahrung bei Quick Bites. Wir freuen uns darauf, Sie mit offenen Armen willkommen zu heißen!",
+        "p2": "Wir sind stolz darauf, eine einzigartige kulinarische Erfahrung mit unserer hausgemachten Küche und einer Vielfalt an Street Food anzubieten. Unser Ziel ist es, Ihnen schmackhafte und authentische Gerichte anzubieten, die aus frischen und hochwertigen Zutaten zubereitet werden. Von appetitlichen Burgern über asiatische Nudelschalen bis hin zu Gourmet-Sandwiches haben wir Optionen, um jeden Geschmack zufriedenzustellen. Wir arbeiten mit lokalen Lieferanten zusammen und bieten vegetarische und vegane Auswahlmöglichkeiten an."
+      },
+      "galeria": {
+        "slider": {
+          "images": [
+            {
+              "id": "1",
+              "src": "Pfad_zum_Bild_1"
+            },
+            {
+              "id": "2",
+              "src": "Pfad_zum_Bild_2"
+            },
+            {
+              "id": "3",
+              "src": "Pfad_zum_Bild_3"
+            },
+            {
+              "id": "4",
+              "src": "Pfad_zum_Bild_4"
+            }
+          ]
+        }
+      },
+      "footer": {
+        "h2": "© Quick Bites",
+        "p": "Alle Rechte vorbehalten. | Für weitere Informationen ",
+        "p2" : "Hier klicken"
+      },
+      
+        "menu": {
+          "home": "Startseite",
+          "about": "Über uns",
+          "menu": "Speisekarte",
+          "contact": "Kontakt"
+        },
+        
+          "contact": {
+            "title": "Kontaktiere uns:",
+            "info": {
+              "title": "Quick Bites",
+              "address": "Adresse: Hauptstraße 123, Stadt, Bundesland 12345",
+              "phone": "Telefon: (555) 123-4567",
+              "email": "E-Mail: info@deliciousbites.com",
+              "timings": {
+                "openingHours": "Öffnungszeiten:",
+                "weekday": "Montag bis Freitag: 11:00 Uhr - 22:00 Uhr",
+                "weekend": "Samstag und Sonntag: 12:00 Uhr - 23:00 Uhr"
+              }
+            }
+          
+        },
+        "main-menu": {
+          "entrantes": "Vorspeisen",
+          "platoPrincipal": "Hauptgericht",
+          "platoEspecial": "Haus-Spezialitäten",
+          "pizzas": "Unsere Pizzen",
+          "postre": "Desserts"
+        }
+         
+    }
+  }
+  

@@ -1,12 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import chefLogo from "../images/chefLogo.png";
-import { useTranslation, i18n } from "react-i18next";
-import es from "../images/es.png";
-import ing from "../images/ing.png";
+import { useTranslation } from "react-i18next";
 
-const Navbar = () => {
-  const { t } = useTranslation();
+const lang = {
+  en: "English",
+  es: "Spanish",
+  de: "German",
+};
+
+const Navbar = ({ changeLanguage }) => {
+  const { t, i18n } = useTranslation();
 
   return (
     <div className="navbar">
@@ -20,26 +24,23 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink className="navlinks" to={"/"}>
-            Home
+            {t("home-container.menu.home")}
           </NavLink>
         </li>
         <li>
           <NavLink className="navlinks" to={"/menu"}>
-            Menu
+            {t("home-container.menu.menu")}
           </NavLink>
         </li>
         <li>
           <NavLink className="navlinks" to={"/contact"}>
-            Contact
+            {t("home-container.menu.contact")}
           </NavLink>
         </li>
         <li>
-          <button>
-            <select>
-              <option value="es">Spanish</option>
-              <option value="ing">English</option>
-            </select>
-          </button>
+          <button onClick={() => changeLanguage("es")}>Es</button>
+          <button onClick={() => changeLanguage("en")}>EN</button>
+          <button onClick={() => changeLanguage("de")}>DE</button>
         </li>
       </ul>
     </div>
