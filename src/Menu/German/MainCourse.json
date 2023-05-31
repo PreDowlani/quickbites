@@ -4,43 +4,43 @@
           "id": 1,
           "name": "Klassischer Cheeseburger",
           "description": "Rindfleischburger mit Cheddar-Käse, Salat, Tomate, Zwiebeln und spezieller Sauce, serviert mit Pommes frites.",
-          "image": "cheeseburger.jpg"
+          "price": 15.95
         },
         {
           "id": 2,
           "name": "Gemüse Pad Thai",
           "description": "Gebratene Reisnudeln mit frischem Gemüse, Eiern, Erdnüssen und Tamarindensauce.",
-          "image": "pad-thai.jpg"
+          "price": 11.95
         },
         {
           "id": 3,
           "name": "Fisch und Pommes Frites",
           "description": "Gebackenes und frittiertes Fischfilet mit Pommes frites und Tartar-Sauce.",
-          "image": "fish-chips.jpg"
+          "price": 16.95
         },
         {
           "id": 4,
           "name": "Spaghetti Carbonara",
           "description": "Italienische Pasta mit Speck, Ei, Parmesankäse und schwarzem Pfeffer.",
-          "image": "carbonara.jpg"
+          "price": 18.95
         },
         {
           "id": 5,
           "name": "Vegane Burger",
           "description": "Ein saftiger pflanzlicher Burger mit Gewürzen, serviert auf einem Brötchen mit Salat, Tomate, Zwiebel und einer Vielzahl von veganen Saucen.",
-          "image": "vegan-burger.jpg"
+          "price": 12.50
         },
         {
           "id": 6,
           "name": "Falafel-Wrap",
           "description": "Leckere hausgemachte Falafel in einer Weizentortilla gewickelt, begleitet von Hummus, Salat, Tomate und veganer Joghurtsauce.",
-          "image": "falafel-wrap.jpg"
+          "price": 11.95
         },
         {
           "id": 7,
           "name": "BBQ-Burger",
           "description": "Rindfleischburger mit hausgemachter BBQ-Sauce, Cheddar-Käse, knusprigem Speck und karamellisierten Zwiebeln, serviert mit Pommes frites.",
-          "image": "bbq-burger.jpg"
+          "price": 19.95
         }
       ]
       

@@ -5,35 +5,35 @@
       "name": "Crepes de Nutella",
       "description": "Crepes finas rellenas de Nutella, dobladas en triángulos y espolvoreadas con azúcar glas. Servidas con una bola de helado de vainilla.",
       "image": "nutella-crepes.jpg",
-      "precio": 9.99
+      "price": 9.99
     },
     {
       "id": 2,
       "name": "Tiramisú",
       "description": "Postre italiano clásico hecho con capas de bizcochos de soletilla empapados en café y licor, crema de mascarpone y espolvoreado con cacao en polvo.",
       "image": "tiramisu.jpg",
-      "precio": 8.50
+      "price": 8.50
     },
     {
       "id": 3,
       "name": "Tarta de Manzana",
       "description": "Tarta de manzana clásica con una masa mantecosa, rellena de trozos de manzana caramelizados y espolvoreada con canela.",
       "image": "apple-pie.jpg",
-      "precio": 7.75
+      "price": 7.75
     },
     {
       "id": 4,
       "name": "Crème Brûlée",
       "description": "Postre de crema suave y aterciopelada con una capa de azúcar caramelizado crujiente en la parte superior.",
       "image": "creme-brulee.jpg",
-      "precio": 9.25
+      "price": 9.25
     },
     {
       "id": 5,
       "name": "Helado Tempura",
       "description": "Helado envuelto en una fina masa tempura y frito, servido con salsa de chocolate caliente.",
       "image": "tempura-ice-cream.jpg",
-      "precio": 10.50
+      "price": 10.50
     }
   ]
   

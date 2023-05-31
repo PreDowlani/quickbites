@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre, pizzas }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
-  const todoEntrantes = entrantes;
-  const todoPlatoPrincipal = platoPrincipal;
-  const todoPlatoEspecial = platoEspecial;
-  const todoPostre = postre;
-  const todoPizzas = pizzas;
+  // const todoEntrantes = entrantes;
+  // const todoPlatoPrincipal = platoPrincipal;
+  // const todoPlatoEspecial = platoEspecial;
+  // const todoPostre = postre;
+  // const todoPizzas = pizzas;
 
   const [mostrarEntrantes, setEntrantes] = useState(false);
   const [mostrarPlatoPrincipal, setPlatoPrincipal] = useState(false);
@@ -36,6 +36,16 @@ const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre, pizzas }) => {
     setPizzas(!mostrarPizzas);
   };
 
+  const menuData = {
+    entrantes: entrantes[i18n.language],
+    platoPrincipal: platoPrincipal[i18n.language],
+    platoEspecial: platoEspecial[i18n.language],
+    postre: postre[i18n.language],
+    pizzas: pizzas[i18n.language],
+  };
+
+  console.log(menuData.entrantes.starters);
+
   return (
     <div className="main-menu">
       <div className="todoentrantes">
@@ -44,16 +54,16 @@ const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre, pizzas }) => {
         </button>
         {mostrarEntrantes ? (
           <div className="entrantes">
-            {todoEntrantes.map((entra) => {
+            {menuData.entrantes.starters.map((entra) => {
               return (
                 <div>
                   <br />
                   <hr />
                   <ul>
                     <h2 className="nom-pre" key={entra.id}>
-                      {entra.nombre} <li className="precio">{entra.precio}€</li>
+                      {entra.name} <li className="precio">{entra.price}€</li>
                     </h2>
-                    <p className="descrip">{entra.descripcion}</p>
+                    <p className="descrip">{entra.description}</p>
                   </ul>
                 </div>
               );
@@ -67,17 +77,17 @@ const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre, pizzas }) => {
         </button>
         {mostrarPlatoPrincipal ? (
           <div className="platop">
-            {todoPlatoPrincipal.map((platop) => {
+            {menuData.platoPrincipal.maincourse.map((platop) => {
               return (
                 <div>
                   <br />
                   <hr />
                   <ul>
                     <h2 className="nom-pre" key={platop.id}>
-                      {platop.nombre}
-                      <li>{platop.precio}€</li>
+                      {platop.name}
+                      <li>{platop.price}€</li>
                     </h2>
-                    <p className="descrip">{platop.descripcion}</p>
+                    <p className="descrip">{platop.description}</p>
                   </ul>
                 </div>
               );
@@ -91,17 +101,17 @@ const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre, pizzas }) => {
         </button>
         {mostrarPlatoEspecial ? (
           <div className="platoEs">
-            {todoPlatoEspecial.map((especial) => {
+            {menuData.platoEspecial.special.map((especial) => {
               return (
                 <div>
                   <br />
                   <hr />
                   <ul>
                     <h2 className="nom-pre" key={especial.id}>
-                      {especial.nombre}
-                      <li>{especial.precio}€</li>
+                      {especial.name}
+                      <li>{especial.price}€</li>
                     </h2>
-                    <p className="descrip">{especial.descripcion}</p>
+                    <p className="descrip">{especial.description}</p>
                   </ul>
                 </div>
               );
@@ -115,16 +125,16 @@ const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre, pizzas }) => {
         </button>
         {mostrarPizzas ? (
           <div className="pizza">
-            {todoPizzas.map((pizza) => {
+            {menuData.pizzas.pizzas.map((pizza) => {
               return (
                 <div>
                   <br />
                   <hr />
                   <ul>
                     <h2 className="nom-pre" key={pizza.id}>
-                      {pizza.nombre} <li>{pizza.precio}€</li>
+                      {pizza.name} <li>{pizza.price}€</li>
                     </h2>
-                    <p className="decrip">{pizza.descripcion}</p>
+                    <p className="decrip">{pizza.description}</p>
                   </ul>
                 </div>
               );
@@ -138,17 +148,17 @@ const Menu = ({ entrantes, platoPrincipal, platoEspecial, postre, pizzas }) => {
         </button>
         {mostrarPostre ? (
           <div className="postr">
-            {todoPostre.map((postre) => {
+            {menuData.postre.desserts.map((postre) => {
               return (
                 <div>
                   <br />
                   <hr />
                   <ul>
                     <h2 className="nom-pre" key={postre.id}>
-                      {postre.nombre}
-                      <li>{postre.precio}€</li>
+                      {postre.name}
+                      <li>{postre.price}€</li>
                     </h2>
-                    <p className="descrip">{postre.descripcion}</p>
+                    <p className="descrip">{postre.description}</p>
                   </ul>
                 </div>
               );

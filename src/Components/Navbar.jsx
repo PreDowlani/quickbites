@@ -38,9 +38,15 @@ const Navbar = ({ changeLanguage }) => {
           </NavLink>
         </li>
         <li>
-          <button onClick={() => changeLanguage("es")}>Es</button>
-          <button onClick={() => changeLanguage("en")}>EN</button>
-          <button onClick={() => changeLanguage("de")}>DE</button>
+          <button className="setlang" onClick={() => changeLanguage("es")}>
+            Es
+          </button>
+          <button className="setlang" onClick={() => changeLanguage("en")}>
+            En
+          </button>
+          <button className="setlang" onClick={() => changeLanguage("de")}>
+            De
+          </button>
         </li>
       </ul>
     </div>

@@ -4,31 +4,31 @@
           "id": 1,
           "name": "Hummer Ravioli",
           "description": "Ravioli gefüllt mit Hummer und Ricotta, serviert mit Butter- und Zitronensauce.",
-          "image": "hummer-ravioli.jpg"
+          "price": 18.95
         },
         {
           "id": 2,
           "name": "Gebratener Lammbraten",
           "description": "Langsam gebratener Lammbraten, serviert mit Kartoffelpüree und Minzsauce.",
-          "image": "gebratener-lammbraten.jpg"
+          "price": 19.95
         },
         {
           "id": 3,
           "name": "Regenbogen-Sushi-Rolle",
           "description": "Sushi-Rolle mit einer Vielzahl von frischem Fisch, Avocado und Gurke, garniert mit bunten Fischscheiben.",
-          "image": "regenbogen-sushi-rolle.jpg"
+          "price": 15.95
         },
         {
           "id": 4,
           "name": "Hähnchen-Kebab",
           "description": "Gegrillte Spieße mit mariniertem Hähnchen, serviert mit Pilaw-Reis und Tzatziki-Sauce.",
-          "image": "haehnchen-kebab.jpg"
+          "price": 10.50
         },
         {
           "id": 5,
           "name": "Gourmet-Hotdog",
           "description": "Hochwertige Wurst in einem handwerklich hergestellten Brötchen, garniert mit karamellisierten Zwiebeln, Dijon-Senf und Gurken.",
-          "image": "gourmet-hotdog.jpg"
+          "price": 12.50
         }
       ]
       

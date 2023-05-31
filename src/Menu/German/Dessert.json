@@ -5,35 +5,35 @@
           "name": "Nutella-Crepes",
           "description": "Dünne Crepes gefüllt mit Nutella, zu Dreiecken gefaltet und mit Puderzucker bestreut. Serviert mit einer Kugel Vanilleeis.",
           "image": "nutella-crepes.jpg",
-          "precio": 9.99
+          "price": 9.99
         },
         {
           "id": 2,
           "name": "Tiramisu",
           "description": "Klassisches italienisches Dessert aus Lagen von in Kaffee und Likör getränkten Löffelbiskuits, Mascarpone-Creme und mit Kakaopulver bestäubt.",
           "image": "tiramisu.jpg",
-          "precio": 8.50
+          "price": 8.50
         },
         {
           "id": 3,
           "name": "Apfelkuchen",
           "description": "Klassischer Apfelkuchen mit einem buttrigen Teig, gefüllt mit karamellisierten Apfelstücken und mit Zimt bestreut.",
           "image": "apple-pie.jpg",
-          "precio": 7.75
+          "price": 7.75
         },
         {
           "id": 4,
           "name": "Crème Brûlée",
           "description": "Samtig cremiges Dessert mit einer knusprigen karamellisierten Zuckerschicht obenauf.",
           "image": "creme-brulee.jpg",
-          "precio": 9.25
+          "price": 9.25
         },
         {
           "id": 5,
           "name": "Tempura-Eis",
           "description": "Eiscreme in einen dünnen Tempura-Teig gehüllt und frittiert, serviert mit heißer Schokoladensauce.",
           "image": "tempura-ice-cream.jpg",
-          "precio": 10.50
+          "price": 10.50
         }
       ]
       
